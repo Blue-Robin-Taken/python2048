@@ -41,16 +41,12 @@ def loop():
                 sys.exit()
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_LEFT:
-                    print('Key Left')
                     twentyfortyeight.Left()
                 if event.key == pygame.K_RIGHT:
-                    print("Key Right")
                     twentyfortyeight.Right()
                 if event.key == pygame.K_DOWN:
-                    print("Key Down")
                     twentyfortyeight.Down()
                 if event.key == pygame.K_UP:
-                    print("Key Up")
                     twentyfortyeight.Up()
                 group = refreshBoard(group)
 
