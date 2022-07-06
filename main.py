@@ -55,14 +55,15 @@ def GetEmptyTiles(boardList):
 
 
 class TwentyFortyEight:
-    def __init__(self):
+    def __init__(self, consoleOn):  # consoleOn is a bool that allows printing or not printing
         # --- Starting variables ---
         self.score = 0
         self.dead = False
         # --- Print starting game ---
         random.seed(random.random())
-        print("This is 2048! Read rules online.")
-        print("Initializing...")
+        if consoleOn:
+          print("This is 2048! Read rules online.")
+          print("Initializing...")
 
         # --- Generate boardList ---
         rows = []
@@ -85,10 +86,11 @@ class TwentyFortyEight:
         del rows
         del randomEmptyTile
         # --- decrypt boardList ---
-        print(DecryptBoard(self.boardList))
+        if consoleOn:
+            print(DecryptBoard(self.boardList))
 
         # --- start the game ---
-        self.Start()
+        # self.Start()
 
     def Start(self):  # This is the main game loop function
         invalidAnswer = False
@@ -235,4 +237,4 @@ class TwentyFortyEight:
         return check
 
 
-twentyfortyeight = TwentyFortyEight()
+# twentyfortyeight = TwentyFortyEight()
