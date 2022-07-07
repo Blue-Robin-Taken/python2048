@@ -6,3 +6,5 @@ To run the pygame version, run the (https://github.com/Blue-Robin-Taken/python20
 
 
 To run the text console version, run the (https://github.com/Blue-Robin-Taken/python2048/blob/main/main.py) file.
+
+However, the files aren't EXE (I might add a version later) and you have to have python installed.
