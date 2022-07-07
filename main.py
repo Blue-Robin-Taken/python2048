@@ -90,7 +90,8 @@ class TwentyFortyEight:
             print(DecryptBoard(self.boardList))
 
         # --- start the game ---
-        # self.Start()
+        if consoleOn:
+            self.Start()
 
     def Start(self):  # This is the main game loop function
         invalidAnswer = False
@@ -237,4 +238,4 @@ class TwentyFortyEight:
         return check
 
 
-# twentyfortyeight = TwentyFortyEight()
+#twentyfortyeight = TwentyFortyEight(True)

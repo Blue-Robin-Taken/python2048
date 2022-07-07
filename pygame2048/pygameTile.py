@@ -38,7 +38,4 @@ class TwentyFortyEightTile(pygame.sprite.Sprite):
         self.kill()
 
 
-class pygameText(pygame.font.Font):
-    def __init__(self, number, position):
-        super().__init__()
-        self.render(str(self.number), True, (0, 0, 0))
+
